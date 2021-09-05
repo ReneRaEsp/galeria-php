@@ -1,11 +1,22 @@
 <?php require_once 'views/head.php' ?>
 
     <div class="contenedor">
-        <h2 class="tituloFoto">Foto: 1.jpg</h2>
+        <h2 class="tituloFoto"><?php 
+        if(!empty($foto['titulo'])){
+            echo $foto['titulo'];
+        } else {
+            echo $foto['imagen'];
+        }
+        ?></h2>
         <div class="foto">
-            <img class="img" src="images/img1.jpg" alt="">
+            <img class="img" src="images/<?php echo $foto['imagen'] ?>" alt="">
         </div>
-        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus pariatur illum alias natus rem dolores quod, ipsa voluptatum officia facere maiores molestias dolorum ipsam excepturi!</p>
-    </div>
+        <p class="descripcion"><?php echo $foto['texto'] ?></p>
+        
+        <a class="volver" href="http://localhost/php/galeria/index.php">
+            Volver
+        </a>
 
+    </div>
+    
 <?php require_once 'views/foot.php' ?>
