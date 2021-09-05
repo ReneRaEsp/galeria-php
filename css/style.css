@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica";
+  overflow-x: hidden; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 23vh;
+  background: #293e62; }
+  .header h1 {
+    margin: auto;
+    color: #ffffffcc;
+    font-size: 34px; }
+  .header .neon {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff; }
+
+.galeria {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  padding-top: 2rem;
+  background: #cfcfe3; }
+  .galeria .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    background: #628c82;
+    margin: 1.5rem;
+    box-shadow: 0 6px 12px 0 rgba(77, 70, 70, 0.324), 0 8px 20px 0 rgba(94, 90, 90, 0.365);
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 5px;
+    opacity: 1;
+    overflow: hidden; }
+    .galeria .card:hover {
+      box-shadow: 0 6px 12px 0 rgba(58, 57, 57, 0.763), 0 8px 20px 0 rgba(69, 67, 67, 0.715); }
+    .galeria .card .img {
+      width: 140%;
+      height: 140%;
+      border-radius: 5px;
+      transition: 2s; }
+      .galeria .card .img:hover {
+        width: 100%;
+        height: 100%; }
+  .galeria .paginacion {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 20vh;
+    background: #00000000;
+    padding: 30px; }
+    .galeria .paginacion .izquierda, .galeria .paginacion .derecha {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      padding: 20px;
+      background: #2d6882;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.6s; }
+      .galeria .paginacion .izquierda:hover, .galeria .paginacion .derecha:hover {
+        background: #0d235b; }
+    .galeria .paginacion .derecha {
+      border-radius: 2px 12px 12px 2px; }
+    .galeria .paginacion .izquierda {
+      border-radius: 12px 2px 2px 12px; }
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #88b5c4; }
+  .contenedor .tituloFoto {
+    color: #2e3739;
+    margin-bottom: 1rem; }
+  .contenedor .descripcion {
+    width: 40rem;
+    margin-top: 1rem;
+    text-align: center; }
+  .contenedor .foto {
+    width: 24rem;
+    height: 24rem;
+    background: #ffffff; }
+    .contenedor .foto .img {
+      width: 100%;
+      height: 100%; }
+
+@media screen and (max-width: 400px) {
+  .contenedor .foto {
+    width: 90vw;
+    height: 90vw; } }
+.contenedorSubida {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  background: #1d2235; }
+  .contenedorSubida .tituloFoto {
+    color: white; }
+  .contenedorSubida .formulario {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40rem;
+    height: 32rem;
+    background: #1d2235; }
+    .contenedorSubida .formulario .group {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 40rem; }
+      .contenedorSubida .formulario .group label {
+        display: flex;
+        justify-content: center;
+        width: 40rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        font-size: 20;
+        color: white; }
+      .contenedorSubida .formulario .group input {
+        border-radius: 4px;
+        width: 19rem;
+        height: 1.9rem; }
+      .contenedorSubida .formulario .group .tituloInput {
+        background: #ffffff00;
+        border: 2px solid #fff; }
+      .contenedorSubida .formulario .group textarea {
+        background: #00000000;
+        color: #fff;
+        font-weight: bold;
+        border: 2px solid #fff;
+        padding: 12px;
+        border-radius: 3px;
+        min-width: 20rem;
+        min-height: 9rem;
+        max-width: 20rem;
+        max-height: 9rem; }
+      .contenedorSubida .formulario .group button {
+        background: #00000000;
+        color: #fff;
+        border: 2px solid #fff;
+        font-weight: bold;
+        font-size: 17px;
+        width: 17rem;
+        height: 2rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: 0.7s; }
+        .contenedorSubida .formulario .group button:hover {
+          background: #ffffff;
+          color: #1d2235;
+          border: 2px solid #a0d8f7; }
+
+/*# sourceMappingURL=style.css.map */
