@@ -7,5 +7,6 @@
     user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Galeria</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="">
