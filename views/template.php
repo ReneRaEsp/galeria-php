@@ -13,13 +13,17 @@
 
         <div class="paginacion">
             <?php if ($pagina_actual > 1): ?>
-            <a class="izquierda" href="index.php?p=<?php echo $pagina_actual -1 ?>">
+            <a class="izquierda" 
+            href="index.php?p=<?php echo $pagina_actual -1 ?>">
                Página Anterior
             </a>
             <?php endif ?>
-
+            <a class="subir" href="subida.php">
+                Subir Imagen
+            </a>
             <?php if ($total_paginas != $pagina_actual): ?>
-            <a class="derecha" href="index.php?p=<?php echo $pagina_actual +1 ?>">
+            <a class="derecha" 
+            href="index.php?p=<?php echo $pagina_actual +1 ?>">
                 Página Siguiente
             </a>
             <?php endif ?>

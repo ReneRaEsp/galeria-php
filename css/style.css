@@ -89,6 +89,22 @@ body {
       aling-self: flex-start;
       justify-self: flex-start;
       border-radius: 12px 2px 2px 12px; }
+    .galeria .paginacion .subir {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 50vw;
+      transform: translateX(-50%);
+      color: white;
+      font-weight: bold;
+      background: #20273c;
+      padding: 12px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 1s; }
+      .galeria .paginacion .subir:hover {
+        color: #20273c;
+        background: white; }
 
 .contenedor {
   display: flex;
@@ -162,6 +178,9 @@ body {
         font-size: 20;
         color: white; }
       .contenedorSubida .formulario .group input {
+        color: white;
+        font-weight: bold;
+        padding: 5px;
         border-radius: 4px;
         width: 19rem;
         height: 1.9rem; }
@@ -180,6 +199,32 @@ body {
         max-width: 20rem;
         max-height: 9rem; }
       .contenedorSubida .formulario .group button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        background: #00000000;
+        color: #fff;
+        border: 2px solid #fff;
+        font-weight: bold;
+        padding: 12px;
+        font-size: 17px;
+        width: 17rem;
+        height: 2rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: 0.7s; }
+        .contenedorSubida .formulario .group button:hover {
+          background: #ffffff;
+          color: #1d2235;
+          border: 2px solid #a0d8f7; }
+      .contenedorSubida .formulario .group a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 2px;
+        margin: 0rem 12rem 0rem 12rem;
         background: #00000000;
         color: #fff;
         border: 2px solid #fff;
@@ -190,7 +235,7 @@ body {
         border-radius: 3rem;
         cursor: pointer;
         transition: 0.7s; }
-        .contenedorSubida .formulario .group button:hover {
+        .contenedorSubida .formulario .group a:hover {
           background: #ffffff;
           color: #1d2235;
           border: 2px solid #a0d8f7; }

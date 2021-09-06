@@ -1,9 +1,10 @@
 <?php require_once 'views/head.php' ?>
 
     <div class="contenedorSubida contenedor">
-        <h2 class="tituloFoto">Subir foto</h2>
+        
         <form class="formulario" enctype="multipart/form-data" method="POST"
         action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+        <h2 class="tituloFoto">Subir foto</h2>
             <div class="group">
                 <label for="foto">Selecciona tu foto</label>
                 <input type="file" id="foto" name="foto">
@@ -29,6 +30,9 @@
                 <button type="submit">
                     Subir Foto
                 </button>
+                <a href="index.php">
+                    Volver
+                </a>
             </div>
        
        </form>
